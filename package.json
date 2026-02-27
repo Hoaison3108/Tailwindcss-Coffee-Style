@@ -1,0 +1,26 @@
+{
+  "name": "tailwindcss-coffee-style",
+  "version": "1.0.0",
+  "description": "Thực hành xây dựng trang web bằng Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "@tailwindcss/cli -i ./src/input.css -o ./public/output.css --watch",
+    "build:css": "@tailwindcss/cli -i ./src/input.css -o ./public/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoaison3108/Tailwindcss-Coffee-Style.git"
+  },
+  "keywords": [],
+  "author": "SonK",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Hoaison3108/Tailwindcss-Coffee-Style/issues"
+  },
+  "homepage": "https://github.com/Hoaison3108/Tailwindcss-Coffee-Style#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}
