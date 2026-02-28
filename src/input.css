@@ -1,11 +1,47 @@
+/* 1. Nhúng font từ Google Fonts (Phải để trên cùng) */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
 @theme {
+  /* Màu sắc */
   --color-light-coffee: #c89f94;
+  --color-coffee-dark: #4a3018;
+
+  /* Font chữ */
+  --font-logo: "Pacifico", cursive; /* Font viết tay cho Logo */
+  --font-Karla: "Karla", sans-serif; /* Font tròn trịa cho Nội dung */
+
+  /* Khoảng cách tùy chỉnh */
+  --spacing-fluid: 5vw;
+
+  /* Bo góc */
+  --radius-blob: 40% 60% 70% 30% / 40% 50% 60% 50%; /* Hình dáng phá cách */
+
+  /* Đổ bóng */
+  --shadow-coffee: 0 10px 15px -3px rgba(74, 48, 24, 0.2);
+
+  /* hiệu ứng animation */
+  --animate-slideDown: slideDown 0.4s ease-in-out;
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 
 /* ct = custom */
+.ct-top-menu-expanded {
+  @apply absolute top-10 z-50 w-full text-center bg-white animate-slideDown;
+}
+
 .ct-top-menu-item {
-  @apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:bg-light-coffee after:h-0.5 after:w-0  hover:after:w-full after:transition-all after:ease-in-out after:duration-300;
+  @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee after:lg:h-0.5 after:lg:w-0  hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+
+.ct-top-menu-item-active {
+  @apply text-gray-800;
 }
 
 .ct-icon {
