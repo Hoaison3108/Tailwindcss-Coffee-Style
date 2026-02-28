@@ -4,8 +4,8 @@
   "description": "Thực hành xây dựng trang web bằng Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "dev": "@tailwindcss/cli -i ./src/input.css -o ./public/output.css --watch",
-    "build:css": "@tailwindcss/cli -i ./src/input.css -o ./public/output.css"
+    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css"
   },
   "repository": {
     "type": "git",
