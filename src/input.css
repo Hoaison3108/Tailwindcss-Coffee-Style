@@ -29,6 +29,9 @@
       transform: translateY(0);
     }
   }
+
+  /* Ảnh nền dùng chung */
+  --background-image-slider: url("./img/slider-bg.jpg");
 }
 
 /* ct = custom */
