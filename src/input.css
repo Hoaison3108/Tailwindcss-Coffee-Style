@@ -21,8 +21,8 @@
   /* Đổ bóng */
   --shadow-coffee: 0 10px 15px -3px rgba(74, 48, 24, 0.2);
 
-  /* hiệu ứng animation */
-  --animate-slideDown: slideDown 0.4s ease-in-out;
+  /* hiệu ứng animation slideDown */
+  --animate-slideDown: slideDown 0.5s ease-in-out;
   @keyframes slideDown {
     0% {
       transform: translateY(-100%);
@@ -32,6 +32,16 @@
     }
   }
 
+  /* hiệu ứng animation FadeIn */
+  --animate-fadeIn: fadeIn 0.5s ease-in-out;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   /* Ảnh nền dùng chung */
   --background-image-slider: url("./img/slider-bg.jpg");
 }
@@ -66,5 +76,9 @@
 }
 
 .ct-subheadline-label {
-  @apply uppercase mx-4 text-gray-500 font-medium text-[12px] tracking-widest text-center;
+  @apply uppercase mx-4 text-gray-500 font-medium text-xs tracking-widest text-center;
+}
+
+.ct-button {
+  @apply text-center uppercase tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-white/90;
 }
